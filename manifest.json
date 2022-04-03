@@ -1,0 +1,27 @@
+{
+    "name": "Clipboard",
+    "version": "0.01",
+    "description": "An esay to access todo list ", 
+    "browser_action": {
+        "default_title": "uwu mode", 
+        "default_popup": "newtab.html"
+    },
+
+    "background": {
+        "scripts": ["eventPage.js"],
+        "persistent": false
+    },
+
+    "permissions":[
+        "storage",
+        "contextMenus"
+    ],
+    /*"browser_action": {
+        "default_icon": "logo.png", //
+        "popup": "shopcmp.htm"  
+      },
+      */
+
+    "manifest_version": 2,
+    "content_security_policy": "script-src 'self' https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com; object-src 'self'"
+}
